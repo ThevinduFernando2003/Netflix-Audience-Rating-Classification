@@ -1,0 +1,40 @@
+{
+  "formulation": "B",
+  "model": "random_forest",
+  "params": {
+    "preprocess__title__tfidf__ngram_range": [
+      1,
+      2
+    ],
+    "preprocess__title__tfidf__min_df": 2,
+    "preprocess__title__tfidf__max_features": 5000,
+    "clf__n_estimators": 200,
+    "clf__min_samples_split": 8,
+    "clf__min_samples_leaf": 1,
+    "clf__max_features": "sqrt",
+    "clf__max_depth": null,
+    "clf__criterion": "gini"
+  },
+  "cv_scores": {
+    "seconds": 136.1,
+    "f1_macro": {
+      "test_mean": 0.5977130468044639,
+      "test_std": 0.013872015875041962,
+      "train_mean": 0.9742100448277075,
+      "train_std": 0.0014904611235911386
+    },
+    "balanced_accuracy": {
+      "test_mean": 0.5830456125289837,
+      "test_std": 0.014389268344527565,
+      "train_mean": 0.9772208246846482,
+      "train_std": 0.0012518224667735541
+    },
+    "qwk": {
+      "test_mean": 0.6595861988385522,
+      "test_std": 0.017767439592906335,
+      "train_mean": 0.9820104850202611,
+      "train_std": 0.0012964005727933514
+    }
+  },
+  "seed": 42
+}

@@ -1,0 +1,51 @@
+{
+  "model": "logistic_regression",
+  "best_params": {
+    "preprocess__title__tfidf__ngram_range": [
+      1,
+      1
+    ],
+    "preprocess__title__tfidf__min_df": 2,
+    "preprocess__title__tfidf__max_features": 2000,
+    "clf__C": 0.3
+  },
+  "halving_best_f1_macro": 0.5175055515122542,
+  "halving_best_f1_macro_std": 0.0195261105716127,
+  "n_candidates_drawn": 40,
+  "seconds": 153.0,
+  "rungs": [
+    {
+      "rung": 0,
+      "candidates": 40,
+      "resources": 400,
+      "best_f1_macro": 0.49647533799104104
+    },
+    {
+      "rung": 1,
+      "candidates": 10,
+      "resources": 1600,
+      "best_f1_macro": 0.5175055515122542
+    }
+  ],
+  "full_cv": {
+    "seconds": 19.6,
+    "f1_macro": {
+      "test_mean": 0.557583484115991,
+      "test_std": 0.015514832868245986,
+      "train_mean": 0.6462155605034365,
+      "train_std": 0.0071574684466831654
+    },
+    "balanced_accuracy": {
+      "test_mean": 0.586108220610624,
+      "test_std": 0.021377565947528,
+      "train_mean": 0.681110132841691,
+      "train_std": 0.006834609237794025
+    },
+    "qwk": {
+      "test_mean": 0.6425512740294295,
+      "test_std": 0.028383628056302034,
+      "train_mean": 0.6959651823325013,
+      "train_std": 0.009097497028316482
+    }
+  }
+}

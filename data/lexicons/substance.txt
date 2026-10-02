@@ -1,0 +1,10 @@
+drug
+drugs
+cocaine
+alcohol
+drunk
+heroin
+addiction
+marijuana
+weed
+opium

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+htmlcov/
+/models/
+data/interim/
+data/processed/
+reports/_smoke_target_design.md
+reports/_smoke_target_design.json
+.DS_Store
+.env

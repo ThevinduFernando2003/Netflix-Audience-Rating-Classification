@@ -1,0 +1,208 @@
+seed: 42
+
+paths:
+  raw_csv: data/raw/netflix_titles.csv
+  processed_dir: data/processed
+  sealed_split: data/processed/sealed_split.json
+  reports_dir: reports
+  figures_dir: reports/figures
+
+# Columns the shipped extract is required to contain. `cast` and `description`
+# are optional: this extract does not have them. load.py fills them with "".
+required_columns:
+  - show_id
+  - type
+  - title
+  - director
+  - country
+  - date_added
+  - release_year
+  - rating
+  - duration
+  - listed_in
+
+optional_columns:
+  - cast
+  - description
+
+allowed_types:
+  - Movie
+  - TV Show
+
+# Tokens that mean "missing" in this extract. Never rewritten to the string Unknown.
+missing_sentinels:
+  - "Not Given"
+  - "not given"
+  - "N/A"
+  - "n/a"
+  - "NA"
+  - "null"
+  - "NULL"
+  - "none"
+  - "None"
+
+# A duration dumped into `rating`. Case-insensitive full match.
+# Double quotes so YAML keeps the backslashes as regex escapes.
+rating_contamination_pattern: "^\\d+\\s*min$"
+
+date_formats:
+  - "%m/%d/%Y"
+  - "%Y-%m-%d"
+  - "%Y-%m-%d %H:%M:%S"
+  - "%B %d, %Y"
+
+# Ratings that are the absence of a certification, not a maturity level.
+unrated_labels:
+  - NR
+  - UR
+
+# Formulation A folds a raw rating into OTHER when its training-pool count is
+# below this. 5 is the StratifiedKFold minimum; the split code also drops any
+# class that still has fewer than n_splits rows after folding.
+rare_class_min_count: 5
+rare_class_label: OTHER
+
+# Formulation B. Ordinal levels must be contiguous from 0.
+# Edit this mapping, not the Python, when the ladder changes.
+maturity_buckets:
+  - name: Kids
+    ordinal: 0
+    ratings:
+      - TV-Y
+      - TV-G
+      - G
+  - name: Older Kids
+    ordinal: 1
+    ratings:
+      - TV-Y7
+      - TV-Y7-FV
+      - PG
+      - TV-PG
+  - name: Teens
+    ordinal: 2
+    ratings:
+      - PG-13
+      - TV-14
+  - name: Mature
+    ordinal: 3
+    ratings:
+      - R
+      - NC-17
+      - TV-MA
+
+film_ratings:
+  - G
+  - PG
+  - PG-13
+  - R
+  - NC-17
+
+tv_ratings:
+  - TV-Y
+  - TV-Y7
+  - TV-Y7-FV
+  - TV-G
+  - TV-PG
+  - TV-14
+  - TV-MA
+
+split:
+  test_size: 0.15
+  n_splits: 5
+
+# Product formulation is written by scripts/design_target.py after the
+# comparison. Default is B so a later train run has an auditable starting point;
+# the report is the authority, and this key is updated by that script.
+product_formulation: B
+
+# Halving search for Formulation B. 40 candidates are drawn. Early rungs never see
+# more than max_resources rows; each winner is rescored on the full training pool.
+tuning:
+  n_candidates: 40
+  factor: 4
+  min_resources: 400
+  max_resources: 2000
+  cv_splits: 5
+  n_jobs: 2
+  validation_curve_rows: 2000
+  validation_curve_splits: 3
+  models:
+    - logistic_regression
+    - decision_tree
+    - random_forest
+    - hist_gradient_boosting
+features:
+  title_tfidf:
+    ngram_range: [1, 2]
+    min_df: 2
+    max_features: 5000
+    strip_accents: unicode
+  description_tfidf:
+    ngram_range: [1, 2]
+    min_df: 2
+    max_features: 30000
+    sublinear_tf: true
+    stop_words: english
+    strip_accents: unicode
+  categorical:
+    min_frequency: 10
+  lexicon_columns:
+    - lex_violence
+    - lex_sexual
+    - lex_substance
+    - lex_family
+
+lexicons:
+  violence: data/lexicons/violence.txt
+  sexual: data/lexicons/sexual.txt
+  substance: data/lexicons/substance.txt
+  family: data/lexicons/family.txt
+
+# Fixed, untuned hyperparameters for the formulation comparison only.
+# Production tuning is a later stage and must not reuse these as "best".
+comparison:
+  estimators:
+    logistic_regression:
+      C: 1.0
+      max_iter: 400
+      solver: saga
+      penalty: l2
+      class_weight: balanced
+      tol: 0.001
+    decision_tree:
+      max_depth: 12
+      min_samples_leaf: 5
+      min_samples_split: 10
+      class_weight: balanced
+      criterion: gini
+    random_forest:
+      n_estimators: 80
+      max_depth: 16
+      min_samples_leaf: 2
+      min_samples_split: 4
+      max_features: sqrt
+      class_weight: balanced_subsample
+      criterion: gini
+    extra_trees:
+      n_estimators: 80
+      max_depth: 16
+      min_samples_leaf: 2
+      min_samples_split: 4
+      max_features: sqrt
+      class_weight: balanced
+      criterion: gini
+    hist_gradient_boosting:
+      # max_bins is below the library default of 255. On this feature width
+      # (title TF-IDF up to 5,000 columns, densified for this estimator) the
+      # default histogram was still running after 25 minutes for one formulation.
+      learning_rate: 0.1
+      max_iter: 50
+      max_bins: 64
+      max_leaf_nodes: 31
+      min_samples_leaf: 20
+      l2_regularization: 0.0
+      class_weight: balanced
+      early_stopping: false
+    complement_nb:
+      alpha: 1.0
+      norm: false

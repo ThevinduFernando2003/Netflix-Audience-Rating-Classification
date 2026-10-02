@@ -1,0 +1,103 @@
+show_id,type,title,director,cast,country,date_added,release_year,rating,duration,listed_in,description
+m001,Movie,Duration In Rating,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,74 min,,Dramas,A stand-up special.
+m002,Movie,Duration Already Set,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,74 min,90 min,Dramas,A stand-up special with a runtime already recorded.
+m003,Movie,Missing Rating,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,,90 min,Dramas,The catalogue never certified this title.
+m004,Movie,Not Rated Story,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,NR,90 min,Dramas,An unrated drama.
+m005,Movie,Unrated Story,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,UR,90 min,Dramas,An unrated comedy.
+m006,Movie,Explicit Story,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,NC-17,90 min,Dramas,A mature explicit drama about murder.
+m007,Movie,No Director,,"Actor One, Actor Two",United States,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure.
+m008,Movie,No Cast,Ada Lovelace,,United States,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure.
+m009,Movie,No Country,Ada Lovelace,"Actor One, Actor Two",,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure.
+m010,Movie,Two Countries,Ada Lovelace,"Actor One, Actor Two","United States, India","September 25, 2021",2019,PG,90 min,Dramas,A family adventure across two countries.
+m011,TV Show,Five Genres,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,TV-Y,1 Season,"Kids' TV, Dramas, Comedies, Thrillers, Documentaries",A family adventure for children.
+m012,Movie,Amélie,Raúl Campos,"Actor One, Actor Two",United States,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure in Paris.
+m013,Movie,"Hello, World",Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure with a comma in the title.
+m014,Movie,Sentinel Missing,Not Given,"Actor One, Actor Two",Not Given,"September 25, 2021",2019,PG,90 min,Dramas,A family adventure.
+m015,TV Show,Long Crime Show,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,TV-MA,2 Seasons,"TV Dramas, Crime TV Shows",A murder and drug crime thriller for adults.
+m016,Movie,Bad Date,Ada Lovelace,"Actor One, Actor Two",United States,not-a-date,2019,PG,90 min,Dramas,A family adventure.
+m017,Movie,Lexicon Check,Ada Lovelace,"Actor One, Actor Two",United States,"September 25, 2021",2019,TV-MA,90 min,Thrillers,A family faces murder and drug crime in school
+m018,TV Show,"Amélie, A Tale","Raúl Campos, Jan Suter","A, B, C","United States, India","September 25, 2021",2018,TV-Y,2 Seasons,"Kids' TV, Dramas, Comedies, Thrillers, Documentaries",A family faces murder and drug crime in school
+m019,TV Show,Story 19 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m020,TV Show,Story 20 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m021,Movie,Story 21 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m022,TV Show,Story 22 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m023,TV Show,Story 23 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m024,Movie,Story 24 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m025,TV Show,Story 25 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m026,Movie,Story 26 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m027,TV Show,Story 27 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m028,Movie,Story 28 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m029,TV Show,Story 29 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m030,Movie,Story 30 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m031,TV Show,Story 31 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m032,TV Show,Story 32 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m033,Movie,Story 33 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m034,TV Show,Story 34 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m035,TV Show,Story 35 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m036,Movie,Story 36 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m037,TV Show,Story 37 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m038,Movie,Story 38 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m039,TV Show,Story 39 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m040,Movie,Story 40 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m041,TV Show,Story 41 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m042,Movie,Story 42 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m043,TV Show,Story 43 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m044,TV Show,Story 44 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m045,Movie,Story 45 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m046,TV Show,Story 46 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m047,TV Show,Story 47 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m048,Movie,Story 48 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m049,TV Show,Story 49 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m050,Movie,Story 50 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m051,TV Show,Story 51 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m052,Movie,Story 52 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m053,TV Show,Story 53 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m054,Movie,Story 54 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m055,TV Show,Story 55 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m056,TV Show,Story 56 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m057,Movie,Story 57 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m058,TV Show,Story 58 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m059,TV Show,Story 59 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m060,Movie,Story 60 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m061,TV Show,Story 61 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m062,Movie,Story 62 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m063,TV Show,Story 63 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m064,Movie,Story 64 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m065,TV Show,Story 65 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m066,Movie,Story 66 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m067,TV Show,Story 67 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m068,TV Show,Story 68 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m069,Movie,Story 69 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m070,TV Show,Story 70 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m071,TV Show,Story 71 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m072,Movie,Story 72 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m073,TV Show,Story 73 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m074,Movie,Story 74 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m075,TV Show,Story 75 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m076,Movie,Story 76 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m077,TV Show,Story 77 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m078,Movie,Story 78 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m079,TV Show,Story 79 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m080,TV Show,Story 80 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m081,Movie,Story 81 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m082,TV Show,Story 82 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m083,TV Show,Story 83 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m084,Movie,Story 84 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m085,TV Show,Story 85 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m086,Movie,Story 86 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m087,TV Show,Story 87 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m088,Movie,Story 88 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m089,TV Show,Story 89 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m090,Movie,Story 90 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.
+m091,TV Show,Story 91 TV-Y,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y,1 Season,Children & Family Movies,A children family adventure at school.
+m092,TV Show,Story 92 TV-G,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-G,1 Season,Kids' TV,A children family cartoon adventure.
+m093,Movie,Story 93 G,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,G,95 min,Children & Family Movies,A children family adventure.
+m094,TV Show,Story 94 TV-Y7,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,TV-Y7,1 Season,Kids' TV,A children adventure for older kids.
+m095,TV Show,Story 95 TV-Y7-FV,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-Y7-FV,1 Season,Kids' TV,A children adventure with fantasy.
+m096,Movie,Story 96 PG,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG,95 min,"Children & Family Movies, Comedies",A family adventure comedy.
+m097,TV Show,Story 97 TV-PG,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-PG,1 Season,"Kids' TV, TV Comedies",A family adventure comedy.
+m098,Movie,Story 98 PG-13,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,PG-13,95 min,"Dramas, Comedies",A teen drama about school friends.
+m099,TV Show,Story 99 TV-14,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-14,1 Season,"Teen TV Shows, TV Dramas",A teen drama.
+m100,Movie,Story 100 R,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,R,95 min,"Thrillers, Horror Movies",A murder thriller for adults.
+m101,TV Show,Story 101 TV-MA,Ada Lovelace,"Actor One, Actor Two",United States,2020-01-15,2019,TV-MA,1 Season,"TV Dramas, Crime TV Shows",A murder and drug crime story for adults.
+m102,Movie,Story 102 NC-17,Ada Lovelace,"Actor One, Actor Two",United States,9/25/2021,2019,NC-17,95 min,"Dramas, Independent Movies",An explicit adult drama.

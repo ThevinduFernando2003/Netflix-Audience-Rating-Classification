@@ -1,0 +1,173 @@
+{
+  "adopted": false,
+  "rule": "Adopt a pre-registered weight mix only when out-of-fold accuracy and out-of-fold macro-F1 both exceed the random forest alone. Otherwise keep the saved forest. The sealed test set is not an input.",
+  "member_order": [
+    "logistic_regression",
+    "random_forest",
+    "hist_gradient_boosting"
+  ],
+  "forest_oof": {
+    "weights": {
+      "logistic_regression": 0,
+      "random_forest": 1,
+      "hist_gradient_boosting": 0
+    },
+    "accuracy": 0.6307754660902459,
+    "f1_macro": 0.5980705106284323,
+    "balanced_accuracy": 0.5830912785310383,
+    "qwk": 0.6596919496759603,
+    "ordinal_mae": 0.4339367738449068,
+    "adjacent_accuracy": 0.9415022966765739,
+    "severe_error_rate": 0.0584977033234261,
+    "mature_as_kids": 6,
+    "kids_as_mature": 40
+  },
+  "chosen": {
+    "weights": {
+      "logistic_regression": 1,
+      "random_forest": 2,
+      "hist_gradient_boosting": 1
+    },
+    "accuracy": 0.6298297757362875,
+    "f1_macro": 0.5992845902372282,
+    "balanced_accuracy": 0.59638673258127,
+    "qwk": 0.6779654020250843,
+    "ordinal_mae": 0.42731694136719806,
+    "adjacent_accuracy": 0.9479870305322886,
+    "severe_error_rate": 0.05201296946771143,
+    "mature_as_kids": 12,
+    "kids_as_mature": 26
+  },
+  "candidates": [
+    {
+      "weights": {
+        "logistic_regression": 1,
+        "random_forest": 0,
+        "hist_gradient_boosting": 0
+      },
+      "accuracy": 0.5975412050797082,
+      "f1_macro": 0.5580149104331993,
+      "balanced_accuracy": 0.5861451172992758,
+      "qwk": 0.6428236142833856,
+      "ordinal_mae": 0.4820318832747906,
+      "adjacent_accuracy": 0.9282626317211564,
+      "severe_error_rate": 0.07173736827884356,
+      "mature_as_kids": 46,
+      "kids_as_mature": 12
+    },
+    {
+      "weights": {
+        "logistic_regression": 0,
+        "random_forest": 1,
+        "hist_gradient_boosting": 0
+      },
+      "accuracy": 0.6307754660902459,
+      "f1_macro": 0.5980705106284323,
+      "balanced_accuracy": 0.5830912785310383,
+      "qwk": 0.6596919496759603,
+      "ordinal_mae": 0.4339367738449068,
+      "adjacent_accuracy": 0.9415022966765739,
+      "severe_error_rate": 0.0584977033234261,
+      "mature_as_kids": 6,
+      "kids_as_mature": 40
+    },
+    {
+      "weights": {
+        "logistic_regression": 0,
+        "random_forest": 0,
+        "hist_gradient_boosting": 1
+      },
+      "accuracy": 0.6087543907052148,
+      "f1_macro": 0.5773089346134295,
+      "balanced_accuracy": 0.5825392942643721,
+      "qwk": 0.6623088002288734,
+      "ordinal_mae": 0.45258038368008646,
+      "adjacent_accuracy": 0.944204269116455,
+      "severe_error_rate": 0.05579573088354499,
+      "mature_as_kids": 21,
+      "kids_as_mature": 20
+    },
+    {
+      "weights": {
+        "logistic_regression": 1,
+        "random_forest": 1,
+        "hist_gradient_boosting": 1
+      },
+      "accuracy": 0.6263172115644421,
+      "f1_macro": 0.593753831799061,
+      "balanced_accuracy": 0.5962441848433186,
+      "qwk": 0.6766300072509192,
+      "ordinal_mae": 0.4323155903809781,
+      "adjacent_accuracy": 0.9465009456903539,
+      "severe_error_rate": 0.05349905430964604,
+      "mature_as_kids": 14,
+      "kids_as_mature": 24
+    },
+    {
+      "weights": {
+        "logistic_regression": 1,
+        "random_forest": 2,
+        "hist_gradient_boosting": 1
+      },
+      "accuracy": 0.6298297757362875,
+      "f1_macro": 0.5992845902372282,
+      "balanced_accuracy": 0.59638673258127,
+      "qwk": 0.6779654020250843,
+      "ordinal_mae": 0.42731694136719806,
+      "adjacent_accuracy": 0.9479870305322886,
+      "severe_error_rate": 0.05201296946771143,
+      "mature_as_kids": 12,
+      "kids_as_mature": 26
+    },
+    {
+      "weights": {
+        "logistic_regression": 2,
+        "random_forest": 1,
+        "hist_gradient_boosting": 1
+      },
+      "accuracy": 0.6205079708186977,
+      "f1_macro": 0.5860676542762592,
+      "balanced_accuracy": 0.5954248328183609,
+      "qwk": 0.6703541002405746,
+      "ordinal_mae": 0.4427181842745204,
+      "adjacent_accuracy": 0.9419075925425561,
+      "severe_error_rate": 0.058092407457443936,
+      "mature_as_kids": 20,
+      "kids_as_mature": 18
+    },
+    {
+      "weights": {
+        "logistic_regression": 1,
+        "random_forest": 1,
+        "hist_gradient_boosting": 2
+      },
+      "accuracy": 0.623750337746555,
+      "f1_macro": 0.5916481831986489,
+      "balanced_accuracy": 0.5941998659778654,
+      "qwk": 0.6756553772518203,
+      "ordinal_mae": 0.4342069710888949,
+      "adjacent_accuracy": 0.9471764388003242,
+      "severe_error_rate": 0.05282356119967576,
+      "mature_as_kids": 15,
+      "kids_as_mature": 23
+    },
+    {
+      "weights": {
+        "logistic_regression": 1,
+        "random_forest": 2,
+        "hist_gradient_boosting": 2
+      },
+      "accuracy": 0.6271278032964064,
+      "f1_macro": 0.5941104689952083,
+      "balanced_accuracy": 0.5931680631530738,
+      "qwk": 0.6774915905859451,
+      "ordinal_mae": 0.4298838151850851,
+      "adjacent_accuracy": 0.9479870305322886,
+      "severe_error_rate": 0.05201296946771143,
+      "mature_as_kids": 12,
+      "kids_as_mature": 25
+    }
+  ],
+  "n_train": 7402,
+  "seed": 42
+}

@@ -1,6 +1,6 @@
 PYTHON := .venv/Scripts/python.exe
 
-.PHONY: setup profile design-target test
+.PHONY: setup profile design-target tune train evaluate improve test
 
 setup:
 	"C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\python.exe" -m venv .venv
@@ -18,6 +18,12 @@ tune:
 
 train:
 	$(PYTHON) scripts/train.py
+
+evaluate:
+	$(PYTHON) scripts/evaluate_test.py
+
+improve:
+	$(PYTHON) scripts/improve_cv.py
 
 test:
 	$(PYTHON) -m pytest

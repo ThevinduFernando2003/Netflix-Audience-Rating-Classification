@@ -1,0 +1,411 @@
+{
+  "formulation": "B",
+  "model_path": "models/best_model.joblib",
+  "parameters_changed": false,
+  "n_train": 7402,
+  "n_holdout_ids": 1319,
+  "n_unrated_excluded": 13,
+  "n_scored": 1306,
+  "holdout_class_counts": {
+    "Mature": 601,
+    "Teens": 397,
+    "Older Kids": 223,
+    "Kids": 85
+  },
+  "cv_scores_from_tuning": {
+    "seconds": 136.1,
+    "f1_macro": {
+      "test_mean": 0.5977130468044639,
+      "test_std": 0.013872015875041962,
+      "train_mean": 0.9742100448277075,
+      "train_std": 0.0014904611235911386
+    },
+    "balanced_accuracy": {
+      "test_mean": 0.5830456125289837,
+      "test_std": 0.014389268344527565,
+      "train_mean": 0.9772208246846482,
+      "train_std": 0.0012518224667735541
+    },
+    "qwk": {
+      "test_mean": 0.6595861988385522,
+      "test_std": 0.017767439592906335,
+      "train_mean": 0.9820104850202611,
+      "train_std": 0.0012964005727933514
+    }
+  },
+  "balanced_subsample": {
+    "holdout": {
+      "n": 1306,
+      "accuracy": 0.6362940275650842,
+      "balanced_accuracy": 0.5776408035032217,
+      "f1_macro": 0.5972511577350287,
+      "qwk": 0.654626073740826,
+      "ordinal_mae": 0.4280245022970903,
+      "adjacent_accuracy": 0.9448698315467075,
+      "severe_error_rate": 0.055130168453292494,
+      "mature_as_kids": 4,
+      "kids_as_mature": 8,
+      "per_class": {
+        "Kids": {
+          "precision": 0.6811594202898551,
+          "recall": 0.5529411764705883,
+          "f1": 0.6103896103896104,
+          "support": 85
+        },
+        "Older Kids": {
+          "precision": 0.5878787878787879,
+          "recall": 0.4349775784753363,
+          "f1": 0.5,
+          "support": 223
+        },
+        "Teens": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5289672544080605,
+          "f1": 0.5419354838709678,
+          "support": 397
+        },
+        "Mature": {
+          "precision": 0.6873198847262247,
+          "recall": 0.7936772046589018,
+          "f1": 0.7366795366795367,
+          "support": 601
+        }
+      },
+      "confusion_matrix": [
+        [
+          47,
+          30,
+          0,
+          8
+        ],
+        [
+          18,
+          97,
+          61,
+          47
+        ],
+        [
+          0,
+          25,
+          210,
+          162
+        ],
+        [
+          4,
+          13,
+          107,
+          477
+        ]
+      ]
+    },
+    "train_resubstitution": {
+      "n": 7402,
+      "accuracy": 0.9721696838692245,
+      "balanced_accuracy": 0.974372486375185,
+      "f1_macro": 0.9713887773028034,
+      "qwk": 0.9804749519829783,
+      "ordinal_mae": 0.0298567954606863,
+      "adjacent_accuracy": 0.9979735206700892,
+      "severe_error_rate": 0.002026479329910835,
+      "mature_as_kids": 0,
+      "kids_as_mature": 0,
+      "per_class": {
+        "Kids": {
+          "precision": 0.9561752988047809,
+          "recall": 0.995850622406639,
+          "f1": 0.975609756097561,
+          "support": 482
+        },
+        "Older Kids": {
+          "precision": 0.9805036555645816,
+          "recall": 0.9549050632911392,
+          "f1": 0.9675350701402805,
+          "support": 1264
+        },
+        "Teens": {
+          "precision": 0.9553610503282276,
+          "recall": 0.9702222222222222,
+          "f1": 0.962734288864388,
+          "support": 2250
+        },
+        "Mature": {
+          "precision": 0.9828605200945626,
+          "recall": 0.9765120375807399,
+          "f1": 0.9796759941089838,
+          "support": 3406
+        }
+      },
+      "confusion_matrix": [
+        [
+          480,
+          2,
+          0,
+          0
+        ],
+        [
+          21,
+          1207,
+          28,
+          8
+        ],
+        [
+          1,
+          16,
+          2183,
+          50
+        ],
+        [
+          0,
+          6,
+          74,
+          3326
+        ]
+      ]
+    },
+    "calibration": {
+      "ece": 0.06911731697212876,
+      "bins": [
+        {
+          "bin_low": 0.2,
+          "bin_high": 0.30000000000000004,
+          "count": 8,
+          "accuracy": 0.625,
+          "confidence": 0.2917796157345565
+        },
+        {
+          "bin_low": 0.30000000000000004,
+          "bin_high": 0.4,
+          "count": 137,
+          "accuracy": 0.34306569343065696,
+          "confidence": 0.3629614938212792
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "count": 303,
+          "accuracy": 0.46864686468646866,
+          "confidence": 0.4532297740576589
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6000000000000001,
+          "count": 347,
+          "accuracy": 0.622478386167147,
+          "confidence": 0.5512298559095249
+        },
+        {
+          "bin_low": 0.6000000000000001,
+          "bin_high": 0.7000000000000001,
+          "count": 265,
+          "accuracy": 0.7735849056603774,
+          "confidence": 0.6479282255442074
+        },
+        {
+          "bin_low": 0.7000000000000001,
+          "bin_high": 0.8,
+          "count": 157,
+          "accuracy": 0.8535031847133758,
+          "confidence": 0.7441907185946153
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "count": 63,
+          "accuracy": 0.9206349206349206,
+          "confidence": 0.8435582093570837
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "count": 26,
+          "accuracy": 0.9230769230769231,
+          "confidence": 0.9293922906193445
+        }
+      ]
+    }
+  },
+  "class_weight_none": {
+    "holdout": {
+      "n": 1306,
+      "accuracy": 0.6477794793261868,
+      "balanced_accuracy": 0.5640507584240475,
+      "f1_macro": 0.5991468437368066,
+      "qwk": 0.6628936881895677,
+      "ordinal_mae": 0.41500765696784075,
+      "adjacent_accuracy": 0.9448698315467075,
+      "severe_error_rate": 0.055130168453292494,
+      "mature_as_kids": 1,
+      "kids_as_mature": 9,
+      "per_class": {
+        "Kids": {
+          "precision": 0.8076923076923077,
+          "recall": 0.49411764705882355,
+          "f1": 0.6131386861313869,
+          "support": 85
+        },
+        "Older Kids": {
+          "precision": 0.6621621621621622,
+          "recall": 0.43946188340807174,
+          "f1": 0.5283018867924528,
+          "support": 223
+        },
+        "Teens": {
+          "precision": 0.5884353741496599,
+          "recall": 0.4357682619647355,
+          "f1": 0.5007235890014472,
+          "support": 397
+        },
+        "Mature": {
+          "precision": 0.6564039408866995,
+          "recall": 0.8868552412645591,
+          "f1": 0.7544232130219392,
+          "support": 601
+        }
+      },
+      "confusion_matrix": [
+        [
+          42,
+          34,
+          0,
+          9
+        ],
+        [
+          9,
+          98,
+          58,
+          58
+        ],
+        [
+          0,
+          12,
+          173,
+          212
+        ],
+        [
+          1,
+          4,
+          63,
+          533
+        ]
+      ]
+    },
+    "train_resubstitution": {
+      "n": 7402,
+      "accuracy": 0.9613617941097001,
+      "balanced_accuracy": 0.9498871411594281,
+      "f1_macro": 0.9606130617532769,
+      "qwk": 0.9606299832431167,
+      "ordinal_mae": 0.04755471494190759,
+      "adjacent_accuracy": 0.9921642799243447,
+      "severe_error_rate": 0.007835720075655228,
+      "mature_as_kids": 0,
+      "kids_as_mature": 8,
+      "per_class": {
+        "Kids": {
+          "precision": 0.9956521739130435,
+          "recall": 0.950207468879668,
+          "f1": 0.9723991507430998,
+          "support": 482
+        },
+        "Older Kids": {
+          "precision": 0.984641638225256,
+          "recall": 0.9129746835443038,
+          "f1": 0.9474548440065681,
+          "support": 1264
+        },
+        "Teens": {
+          "precision": 0.959349593495935,
+          "recall": 0.944,
+          "f1": 0.9516129032258065,
+          "support": 2250
+        },
+        "Mature": {
+          "precision": 0.9505061867266592,
+          "recall": 0.9923664122137404,
+          "f1": 0.9709853490376329,
+          "support": 3406
+        }
+      },
+      "confusion_matrix": [
+        [
+          458,
+          13,
+          3,
+          8
+        ],
+        [
+          2,
+          1154,
+          61,
+          47
+        ],
+        [
+          0,
+          5,
+          2124,
+          121
+        ],
+        [
+          0,
+          0,
+          26,
+          3380
+        ]
+      ]
+    },
+    "calibration": {
+      "ece": 0.04242895974706824,
+      "bins": [
+        {
+          "bin_low": 0.30000000000000004,
+          "bin_high": 0.4,
+          "count": 59,
+          "accuracy": 0.3898305084745763,
+          "confidence": 0.36972547118883115
+        },
+        {
+          "bin_low": 0.4,
+          "bin_high": 0.5,
+          "count": 249,
+          "accuracy": 0.4457831325301205,
+          "confidence": 0.4615254313853898
+        },
+        {
+          "bin_low": 0.5,
+          "bin_high": 0.6000000000000001,
+          "count": 348,
+          "accuracy": 0.5660919540229885,
+          "confidence": 0.550250016631649
+        },
+        {
+          "bin_low": 0.6000000000000001,
+          "bin_high": 0.7000000000000001,
+          "count": 302,
+          "accuracy": 0.6986754966887417,
+          "confidence": 0.6480884692374399
+        },
+        {
+          "bin_low": 0.7000000000000001,
+          "bin_high": 0.8,
+          "count": 202,
+          "accuracy": 0.8514851485148515,
+          "confidence": 0.7445581671766716
+        },
+        {
+          "bin_low": 0.8,
+          "bin_high": 0.9,
+          "count": 103,
+          "accuracy": 0.9029126213592233,
+          "confidence": 0.8391844591344598
+        },
+        {
+          "bin_low": 0.9,
+          "bin_high": 1.0,
+          "count": 43,
+          "accuracy": 0.9069767441860465,
+          "confidence": 0.9384340551839022
+        }
+      ]
+    }
+  }
+}

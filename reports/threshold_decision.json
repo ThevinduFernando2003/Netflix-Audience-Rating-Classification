@@ -1,0 +1,187 @@
+{
+  "adopted": false,
+  "rule": "Adopt a pre-registered class-probability scale only when out-of-fold accuracy and macro-F1 both beat the unscaled random forest. The holdout is not loaded.",
+  "baseline": {
+    "base": "random_forest",
+    "scales": {},
+    "accuracy": 0.6307754660902459,
+    "f1_macro": 0.5980705106284323,
+    "qwk": 0.6596919496759603,
+    "mature_as_kids": 6
+  },
+  "chosen": null,
+  "candidates": [
+    {
+      "base": "random_forest",
+      "scales": {},
+      "accuracy": 0.6307754660902459,
+      "f1_macro": 0.5980705106284323,
+      "qwk": 0.6596919496759603,
+      "mature_as_kids": 6
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Kids": 1.25
+      },
+      "accuracy": 0.6287489867603351,
+      "f1_macro": 0.5939584286380976,
+      "qwk": 0.6644732687901893,
+      "mature_as_kids": 9
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Kids": 1.25
+      },
+      "accuracy": 0.6251013239664955,
+      "f1_macro": 0.5883521368969296,
+      "qwk": 0.6802672762601251,
+      "mature_as_kids": 19
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Kids": 1.5
+      },
+      "accuracy": 0.6248311267225074,
+      "f1_macro": 0.5844411864471105,
+      "qwk": 0.6681460971714961,
+      "mature_as_kids": 15
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Kids": 1.5
+      },
+      "accuracy": 0.6225344501486085,
+      "f1_macro": 0.5825610504017825,
+      "qwk": 0.6807469021985935,
+      "mature_as_kids": 30
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Older Kids": 1.25
+      },
+      "accuracy": 0.6282085922723588,
+      "f1_macro": 0.5928556510923766,
+      "qwk": 0.6549163178100077,
+      "mature_as_kids": 5
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Older Kids": 1.25
+      },
+      "accuracy": 0.6253715212104837,
+      "f1_macro": 0.5950840222924032,
+      "qwk": 0.6638200368296558,
+      "mature_as_kids": 10
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Older Kids": 1.5
+      },
+      "accuracy": 0.6209132666846798,
+      "f1_macro": 0.5771128547833976,
+      "qwk": 0.6474671596187274,
+      "mature_as_kids": 3
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Older Kids": 1.5
+      },
+      "accuracy": 0.6179410970008106,
+      "f1_macro": 0.5869271846681536,
+      "qwk": 0.6496848040568994,
+      "mature_as_kids": 8
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Teens": 1.25
+      },
+      "accuracy": 0.618886787354769,
+      "f1_macro": 0.5964741042894363,
+      "qwk": 0.6604698514086156,
+      "mature_as_kids": 6
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Teens": 1.25
+      },
+      "accuracy": 0.6206430694406917,
+      "f1_macro": 0.5965531395855221,
+      "qwk": 0.678779159414933,
+      "mature_as_kids": 10
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Mature": 0.85
+      },
+      "accuracy": 0.6244258308565253,
+      "f1_macro": 0.6002426907487062,
+      "qwk": 0.6660257315583862,
+      "mature_as_kids": 7
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Mature": 0.85
+      },
+      "accuracy": 0.6241556336125371,
+      "f1_macro": 0.600239845493397,
+      "qwk": 0.6760684222336214,
+      "mature_as_kids": 12
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Mature": 0.75
+      },
+      "accuracy": 0.6157795190489057,
+      "f1_macro": 0.598694931374252,
+      "qwk": 0.6633447209186502,
+      "mature_as_kids": 7
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Mature": 0.75
+      },
+      "accuracy": 0.616455012158876,
+      "f1_macro": 0.5977428607479878,
+      "qwk": 0.6726751371599591,
+      "mature_as_kids": 12
+    },
+    {
+      "base": "random_forest",
+      "scales": {
+        "Kids": 1.5,
+        "Older Kids": 1.25,
+        "Mature": 0.85
+      },
+      "accuracy": 0.6163199135368819,
+      "f1_macro": 0.5915662225728568,
+      "qwk": 0.6588598651056989,
+      "mature_as_kids": 13
+    },
+    {
+      "base": "vote_1_2_1",
+      "scales": {
+        "Kids": 1.5,
+        "Older Kids": 1.25,
+        "Mature": 0.85
+      },
+      "accuracy": 0.6129424479870306,
+      "f1_macro": 0.5844290399416533,
+      "qwk": 0.6630591477314892,
+      "mature_as_kids": 24
+    }
+  ]
+}

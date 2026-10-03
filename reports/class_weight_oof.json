@@ -1,0 +1,19 @@
+{
+  "adopted": false,
+  "rule": "Prefer class_weight=None only when both out-of-fold accuracy and out-of-fold macro-F1 beat the balanced forest. The holdout table is not an input to this flag.",
+  "n_train": 7402,
+  "unweighted_oof": {
+    "accuracy": 0.6348284247500675,
+    "f1_macro": 0.5765185867666252,
+    "balanced_accuracy": 0.5428556926820136,
+    "qwk": 0.6294364994367734,
+    "mature_as_kids": 0,
+    "kids_as_mature": 71
+  },
+  "balanced_oof": {
+    "accuracy": 0.6307754660902459,
+    "f1_macro": 0.5980705106284323,
+    "qwk": 0.6596919496759603,
+    "mature_as_kids": 6
+  }
+}

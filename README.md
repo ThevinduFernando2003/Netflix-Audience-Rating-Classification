@@ -55,3 +55,23 @@ python scripts/evaluate_test.py
 ```
 
 `scripts/evaluate_test.py` scores the saved model. It does not search again.
+
+## Predict
+
+Install the serving packages, then start the API or the page. Both load `models/best_model.joblib` and return Kids, Older Kids, Teens, and Mature in that order. A Kids prediction shows the severe-error warning: a Mature title predicted as Kids is the safety-critical failure.
+
+```text
+pip install -r requirements-serve.txt
+uvicorn src.serving.api:app --port 8000
+streamlit run app/streamlit_app.py
+```
+
+`POST /predict` takes `title` and `type` (`Movie` or `TV Show`), plus optional `listed_in`, `director`, `country`, `date_added`, `release_year`, and `duration`. `GET /health` reports whether the model file is present.
+
+Docker Compose mounts the local `models` directory, which is not in git:
+
+```text
+docker compose up --build
+```
+
+The API listens on port 8000 and the page on port 8501. GitHub Actions runs `pytest` on Python 3.11. That job does not need the fitted model file.
